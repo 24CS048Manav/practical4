@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Portal Content</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Portal</h1>
+    <p>Dynamic Content with JavaScript (ES6+)</p>
+  </header>
+
+  <!-- ===== Image Slider ===== -->
+  <section class="slider">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1015/800/400" class="slide active" alt="Slide 1">
+      <img src="https://picsum.photos/id/1016/800/400" class="slide" alt="Slide 2">
+      <img src="https://picsum.photos/id/1018/800/400" class="slide" alt="Slide 3">
+    </div>
+    <div class="slider-buttons">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Collapsible FAQs ===== -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div id="faq-container"></div>
+  </section>
+
+  <!-- ===== Popup Section ===== -->
+  <section class="popup-demo">
+    <button id="openPopup" class="btn">Show Event Popup</button>
+  </section>
+
+  <!-- ===== Popup Modal ===== -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span id="closePopup" class="close">&times;</span>
+      <h3>Upcoming Event</h3>
+      <p><strong>Event:</strong> Web Development Workshop</p>
+      <p><strong>Date:</strong> 20th October 2025</p>
+      <p><strong>Venue:</strong> Charusat Seminar Hall</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 My Portal | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
